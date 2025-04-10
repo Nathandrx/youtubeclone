@@ -120,16 +120,6 @@ body {
   cursor: pointer;
   background: #ddddddcb;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-
   .video-thumbnail {
     width: 100%;
   }
@@ -167,7 +157,7 @@ main {
 
 .video {
   background: white;
-  width: 400px;
+  width: 370px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -187,7 +177,7 @@ body.dark .video {
 }
 
 .thumb {
-  width: 400px;
+  width: 370px;
   display: block;
   aspect-ratio: 16/9;
   object-fit: cover;

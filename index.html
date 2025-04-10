@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="left">
+      <img src="apps.svg" alt="Menu" class="icon">
+      <img src="logo.png" alt="Logo YouTube" class="logo">
+    </div>
+
+    <div class="center">
+      <input type="text" placeholder="Pesquisar">
+      <button><img src="magnify.svg" alt="Buscar" class="icons"></button>
+      <img src="microphone.svg" class="micro">
+    </div>
+
+    <div class="right">
+      <button id="toggle-dark">
+        <img id="icon-darkmode" src="light-mode.svg" alt="Modo Escuro"/>
+      </button>       
+      <img src="video-plus.svg" class="icon">
+      <img src="bell.svg" class="icon">
+      <img src="profile.png" class="profile">
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><img src="home-icon.svg"> Início</li>
+        <li><img src="shorts.svg"> Shorts</li>
+        <li><img src="envelope-icon.svg"> Inscrições</li>
+        <li><img src="profile.png"> Você</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="video-grid">
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/zGj3XxJT38g/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="ss.jpg" alt="canal">
+        <div class="meta">
+          <h4>POGRAMA DE BÊBO #37</h4>
+          <p>Sofia Santino</p>
+          <p>
+            620 mil visualizações  há 1 mês</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://yt3.googleusercontent.com/Ndf5Ipk8vJiq7k2ePGYhgp0w1dvb5Wjh2_JMEZ2MOgZ-kkivbZSD7IODfSoJZ5LiIY9otn0uCw=s160-c-k-c0x00ffffff-no-rj" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="channels4_profile.jpg" alt="canal">
+        <div class="meta">
+          <h4>A Treta das CHIQUITITAS!!!</h4>
+          <p> Ismael</p>
+          <p>1 mi de visualizações  há 4 dias</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/cMTrUCasbss/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="channels4_profile (1).jpg" alt="canal">
+        <div class="meta">
+          <h4>Teto - M4 feat. Matuê</h4>
+          <p>
+            30PRAUM
+            </p>
+          <p>
+            231 mi de visualizações  há 4 anos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/2By28YX4lTc/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="ali.jpg" alt="canal">
+        <div class="meta">
+          <h4>Fantasmas (e invasores)</h4>
+          <p>
+            Aline Valentin</p>
+          <p>
+            1,8 mil visualizações  há 8 diass</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/zuZ_7gZsLjE/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="t3ddy g.jpg" alt="canal">
+        <div class="meta">
+          <h4>VIREI O PIOR SEGURANÇA DE BALADA… (I Am Security VR)</h4>
+          <p>T3ddy, só que games</p>
+          <p>
+            116 mil visualizações  há 2 dias</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/jN4vVuNM2_M/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="ss.jpg" alt="canal">
+        <div class="meta">
+          <h4>TODAS AS MINHAS CIRURGIAS</h4>
+          <p>Sofia Santino</p>
+          <p>
+            136 mil visualizações  há 10 dias</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <img class="thumb" src="https://img.youtube.com/vi/GZ1IwSXgX38/hqdefault.jpg" alt="thumb">
+      <div class="info">
+        <img class="channel-pic" src="t3ddy.jpg" alt="canal">
+        <div class="meta">
+          <h4>Ela se apaixonou por um mendigo, mas ele ficou BILIONÁRIO...</h4>
+          <p>T3ddy</p>
+          <p>
+            319 mil visualizações  há 5 dias</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+        <img class="thumb" src="https://img.youtube.com/vi/FpDWD31qO9c/hqdefault.jpg" alt="thumb">
+        <div class="info">
+        <img class="channel-pic" src="noods.jpg" alt="canal">
+        <div class="meta">
+          <h4>
+            TESTANDO SEU GAYDAR Ft. Ismeiow e Ranozera 🏳️‍🌈</h4>
+          <p>Nood TV</p>
+          <p>
+            963 mil visualizações  há 10 dias</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById("toggle-dark");
+    const body = document.body;
+    const icon = document.getElementById("icon-darkmode");
+  
+    const setIcon = (isDark) => {
+      icon.src = isDark ? "dark-mode.svg" : "light-mode.svg";
+      icon.alt = isDark ? "Modo Claro" : "Modo Escuro";
+    };
+  
+    const dark = localStorage.getItem("darkMode") === "true";
+    if (dark) {
+      body.classList.add("dark");
+      setIcon(true);
+    }
+  
+    btn.addEventListener("click", () => {
+      const isDark = body.classList.toggle("dark");
+      localStorage.setItem("darkMode", isDark);
+      setIcon(isDark);
+    });
+  </script>
+  
+  
+  
+</body>
+</html>
